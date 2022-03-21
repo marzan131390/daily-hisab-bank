@@ -7,6 +7,7 @@
     <title>A Daily Counter able Bank</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="fav-icon.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="login-area"> 
@@ -19,6 +20,46 @@
             <input type="password" name="" id="" class="form-control" placeholder="Password"> 
             <br>
             <button id="loginBtn" class="btn btn-success">Log In</button>
+        </div>
+    </div>
+    <div id="transaction-area"> 
+        <div class="row">
+            <div class="col-md-4" id="">
+                <div class="deposit status"> 
+                    <h4>Deposit</h4>
+                    <h2 class="deposit-cal">$ <span id="current-deposit">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4" id="">
+                <div class="withdraw status"> 
+                    <h4>Withdraw</h4>
+                    <h2>$ <span id="current-withdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4" id="">
+                <div class="balance status"> 
+                    <h4>Balance</h4>
+                    <h2>$ <span id="current-balance">1200</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="deposit-money"> 
+                    <h5>Deposit</h5>
+                    <input type="number" name=""  class="form-control" id="deposit-amount" placeholder="$ amount you want to deposit"> 
+                    <br>
+                    <button class="btn btn-success" id="deposit-btn">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="withdraw-money"> 
+                    <h5>Withdraw</h5>
+                    <input type="number" name="" class="form-control" id="withdraw-amount" placeholder="$ amount you want to withdraw"> 
+                    <br>
+                    <button class="btn btn-success" id="withdraw-btn">Withdraw</button>
+                </div>
+            </div>
         </div>
     </div>
 
