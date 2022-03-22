@@ -50,6 +50,7 @@ withdrawButton.addEventListener("click", function() {
     // let totalAmount = currentWithMoney + withdrawAmount;
     // currentWithdraw.innerText = totalAmount;
     updateSpanText(currentWithdraw, withdrawAmount);
+    updateSpanText(currentBalance, -1*withdrawAmount)
     withdrawInput.value = "";
 })
 
